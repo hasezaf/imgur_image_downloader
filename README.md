@@ -7,7 +7,7 @@ A collection of lightweight Python automation scripts for web scraping, media re
 | Project | Description | Dependencies |
 | :--- | :--- | :--- |
 | **Imgur Downloader** | Downloads images from Imgur based on search queries and saves in current working directory | `requests`, `bs4`|
-| **2048 Bot** | Opens and plays 2048 with random inputs and loops upon game over infinitely until user input | `playwright.sync_api`|
+| **2048 Bot** | Opens and plays 2048 with random inputs and loops upon game over infinitely until user input | `playwright`|
 
 
 ## Setup & Installation
@@ -20,6 +20,10 @@ A collection of lightweight Python automation scripts for web scraping, media re
 2. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
+   ```  
+   Run command below as well for 2048 bot:   
+   ```bash
+   playwright install
    ```
 3. **Run a Script**
    ```bash
