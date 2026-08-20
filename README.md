@@ -1,38 +1,48 @@
-# imgur_image_downloader  
-**Automatically searches and downloads number of images, specified by you in command terminal, from Imgur and stores them in local directory neatly. Uses beautiful soup and requests modules in python.**  
+# Web Scraping & Automation Collection
 
-**What can it do?:**  
-Can Retrieve images based on multi word search queries  `
-Can set maximum number of images to download or if less than the number specified, download all images that appear on searching  
-Can automatically create a folder in your current working directly with subfolders (./downloads/<search term>)  
-Can handle errors, skipping broken urls, timeouts and misinputs  
+A collection of lightweight Python automation scripts for web scraping, media retrieval, and data extraction.
 
+## Included Projects
 
-**Prerequisites:**  
-Python 3.7 or higher installed in your system
+| Project | Description | Dependencies |
+| :--- | :--- | :--- |
+| **Imgur Downloader** | Downloads images from Imgur based on search queries and saves in current working directory | `requests`, `bs4`|
+| **2048 Bot** | Opens and lays 2048 with random inputs and loops upon game over infinitely until user input | `playwright.sync_api`|
 
 
-**Installation:**  
-Clone repository:  
+## Setup & Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/hasezaf/web-scraping-python.git](https://github.com/hasezaf/web-scraping-python.git)
+   cd web-scraping-python
+   ```
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run a Script**
+   ```bash
+   python imgur_image_downloader.py (followed by relevant command arguments if needed)
+   ```
+   Replace imgur_image_downloader.py with any other script that you want to run
+   
+**How to use:**
+
+1. **Imgur image downloader:** Run your command in this format in command terminal:
 ```bash
-   git clone [https://github.com/hasezaf/imgur-image-downloader.git](https://github.com/hasezaf/imgur-image-downloader.git)
-   cd imgur-image-downloader
+python imgur_image_downloader.py <search term> <number of images>
 ```
-Install dependencies:  
-```bash
-pip install -r requirements.txt
-```
- OR ALTERNATIVELY
-
- ```bash
-pip install beautifulsoup4 requests
-```
-
-**How to use:**  
-Run your command in this format in command terminal "python imgur_image_downloader.py <search term> <number of images>" replacing text within <> with your inputs for example this command on my pc would look like this:
-
-
+replacing text within <> with your inputs for example this command on my pc would look like this:
 C:\Users\users> python imgur_image_downloader cats 10  
-will download 10 images of cats at path 'C:/Users/users/downloads/cats', it forms a downloads folder at your current working directory.  
+and will download 10 images of cats at path 'C:/Users/users/downloads/cats', it forms a downloads folder at your current working directory.
+
+3. **2048 Bot:**   
+Just run the .py file in command terminal:
+```bash
+python 2048_bot.py
+```
+To quit the program, do Ctrl+C in you command terminal.  
+You can also see your scores after every game over in your command terminal  
 
 Thank you for using this.
