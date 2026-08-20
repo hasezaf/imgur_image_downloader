@@ -41,7 +41,7 @@ replacing text within <> with your inputs for example this command on my pc woul
 C:\Users\users> python imgur_image_downloader cats 10  
 and will download 10 images of cats at path 'C:/Users/users/downloads/cats', it forms a downloads folder at your current working directory.
 
-3. **2048 Bot:**   
+2. **2048 Bot:**   
 Just run the .py file in command terminal:
 ```bash
 python 2048_bot.py
